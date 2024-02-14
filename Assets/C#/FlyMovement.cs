@@ -14,7 +14,6 @@ public class FlyMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //StartFlyingStraight();
     }
 
     void Update()
@@ -40,8 +39,4 @@ public class FlyMovement : MonoBehaviour
     void StartFlyingDown() {
         rb.AddRelativeForce(Vector3.up * flyDown * Time.deltaTime);
     }
-
-    // void StartFlyingStraight() {
-    //     (Vector3.right * flyStraight * Time.deltaTime);
-    // }
 }
